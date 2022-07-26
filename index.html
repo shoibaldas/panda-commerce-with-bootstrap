@@ -12,7 +12,7 @@
 <body>
     <!-- Navbar-Start -->
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,13 +26,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
         <!-- categories start -->
         <section>
             <div class="container text-center my-5">
-                <div class="row g-2">
+                <div class="row g-4">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="p-3 border rounded bg-warning d-flex align-items-center justify-content-around">
                             <h1>Watch</h1>
@@ -137,10 +137,11 @@
         </section>
         <!-- categories end -->
         <!-- shoes section start -->
-        <section class="container">
+        <section class="container" id="shoes">
+            <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
                 <div class="col">
-                    <div class="card border border-0 shadow-lg h-100">
+                    <div class="card border border-0 shadow-lg bg-success text-white h-100">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
@@ -152,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border border-0 shadow-lg h-100">
+                    <div class="card border border-0 shadow-lg bg-success text-white h-100">
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
@@ -164,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border border-0 shadow-lg h-100">
+                    <div class="card border border-0 shadow-lg bg-success text-white h-100">
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Addidas 380</h5>
@@ -179,11 +180,71 @@
         </section>
         <!-- shoes section end -->
         <!-- Backpack section start -->
-        <section>
-            
+        <section class="container my-5" id="backpack">
+            <h2>Backpack</h2>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                <div class="col">
+                    <div class="card border border-0 shadow-lg bg-warning h-100">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Supply 350</h5>
+                            <h2>$120</h2>
+                            <p class="card-text">This is a custom shoe for people who loves walking.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-success">Buy now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg bg-warning h-100">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike 360</h5>
+                            <h2>$135</h2>
+                            <p class="card-text">This one of the coolest shoe available in the market.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-success">Buy now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 shadow-lg bg-warning h-100">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Addidas 380</h5>
+                            <h2>$185</h2>
+                            <p class="card-text">Addidas lover can grab it and feel the chill.</p>
+                        </div>
+                        <div class="m-3">
+                            <div class="btn btn-success">Buy now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Backpack section end -->
+        <!-- Subscribe Start -->
+        <section class="container d-flex rounded-3 bg-success justify-content-center align-items-center p-5"
+            id="subscribe">
+            <div class="text-white">
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales, special occaisions and more</p>
+                <form>
+                    <div class="mb-1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Subscribe End -->
     </main>
+    <footer class="mt-5 text-center">
+        <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
